@@ -1,0 +1,19 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: guestbook-ui2
+  namespace: example2
+  labels:
+    app.kubernetes.io/instance: aaaa
+spec:
+  host: guestbook2.apps.openshift.devopssolutions.net
+  to:
+    kind: Service
+    name: jsonnet-guestbook-ui-2
+    weight: 100
+  port:
+    targetPort: 80
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+  wildcardPolicy: None
