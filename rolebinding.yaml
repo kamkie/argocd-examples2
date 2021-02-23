@@ -1,0 +1,10 @@
+apiVersion: v1
+imagePullSecrets:
+  - name: pipeline-dockercfg-k9l6h
+kind: ServiceAccount
+metadata:
+  name: pipeline
+  namespace: example2
+secrets:
+  - name: pipeline-token-g7k92
+  - name: pipeline-dockercfg-k9l6h
