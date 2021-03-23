@@ -4,5 +4,5 @@
   name: "jsonnet-guestbook-ui-2",
   replicas: 1,
   servicePort: 80,
-  type: "ClusterIp",
+  type: "ClusterIP",
 }
