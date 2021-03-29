@@ -6,7 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: aaaa
 spec:
-  host: guestbook5.apps.openshift.devopssolutions.net
+  host: guestbook6.apps.openshift.devopssolutions.net
   to:
     kind: Service
     name: jsonnet-guestbook-ui-2
